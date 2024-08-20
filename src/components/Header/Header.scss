@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  // color: white;
+
+  &__link {
+    margin-right: auto;
+  }
+
+  &__logo {
+    max-width: 120px;
+  }
+
+  &__nav {
+    margin-right: 35px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__list-item {
+    transition: 0.3s;
+
+    &:hover {
+      color: rgb(32 119 106);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    // &:nth-child(1) {
+    //   color: white;
+    // }
+  }
+
+  &__btn {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: rgb(255 255 255);
+    background-color: rgb(32 119 106);
+    transition: 0.3s;
+
+    &:hover {
+      background-color: rgb(56 190 170);
+      transition: 0.3s;
+    }
+  }
+}

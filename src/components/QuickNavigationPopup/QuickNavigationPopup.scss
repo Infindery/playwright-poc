@@ -1,0 +1,33 @@
+.quick-navigation {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: 0.3s;
+
+  &__link {
+    z-index: -1;
+    display: block;
+    outline: 4px solid rgba(32 119 106 / 70%);
+    outline-offset: -1px;
+    padding: 10px 20px;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba(32 119 106 / 30%);
+    opacity: 0;
+
+    &:focus {
+      z-index: 0;
+      order: -1;
+      opacity: 1;
+    }
+  }
+
+  &.visible {
+    opacity: 1;
+    transition: 0.3s;
+  }
+}

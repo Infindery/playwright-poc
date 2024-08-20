@@ -1,0 +1,26 @@
+.hero {
+  position: relative;
+  padding-top: $pd-desktop;
+  padding-bottom: $pd-desktop;
+  min-height: 500px;
+
+  &__title {
+    margin-bottom: 20px;
+    max-width: 660px;
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  &__description {
+    max-width: 660px;
+    font-size: 24px;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    height: fit-content;
+    max-width: 700px;
+  }
+}
