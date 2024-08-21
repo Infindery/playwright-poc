@@ -10,9 +10,6 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('VisualTests', () => {
 	test('Initial', async ({ page }) => {
-		// await expect(page).toHaveScreenshot('fullpage.png', { fullPage: true });
-		// await expect(page.getByTestId('header')).toHaveScreenshot('header.png');
-		// await expect(page.getByTestId('hero')).toHaveScreenshot('hero.png');
-		await expect(page.getByTestId('footer')).toHaveScreenshot('footer.png');
+		await expect(page.getByTestId('header')).toHaveScreenshot('header.png');
   });
 });

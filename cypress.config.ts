@@ -16,4 +16,11 @@ export default defineConfig({
       configureVisualRegression(on);
     },
   },
+
+  component: {
+    devServer: {
+      framework: "next",
+      bundler: "webpack",
+    },
+  },
 });

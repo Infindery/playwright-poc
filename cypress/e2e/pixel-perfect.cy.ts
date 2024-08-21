@@ -6,10 +6,12 @@ describe('PixelPerfectTests', () => {
   });
 
   it('desktop-xl', () => {
-    cy.getByData('header').compareSnapshot('header');
-    cy.getByData('hero').compareSnapshot('hero');
-    cy.getByData('cards').compareSnapshot('cards');
-    cy.getByData('form').compareSnapshot('form');
-    cy.getByData('footer').compareSnapshot('footer');
+    // cy.getByData('header').compareSnapshot('header');
+    // cy.getByData('hero').compareSnapshot('hero');
+    // cy.getByData('cards').compareSnapshot('cards');
+    // cy.getByData('form').compareSnapshot('form');
+    // cy.getByData('footer').compareSnapshot('footer');
+
+		cy.compareSnapshot('fullpage', { capture: "fullPage" });
   });
 });
