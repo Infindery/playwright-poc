@@ -10,7 +10,7 @@
     "playwright:test": "playwright test",
     "playwright:test:ui": "playwright test --ui",
     "playwright:show-report": "playwright show-report",
-		"cypress:open": "cypress open" 
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "next": "14.2.5",
@@ -24,9 +24,10 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "axe-core": "^4.10.0",
-		"cypress": "^13.13.2",
+    "cypress": "^13.13.2",
     "cypress-axe": "^1.5.0",
-		"cypress-visual-regression": "^5.0.4",
+    "cypress-real-events": "^1.13.0",
+    "cypress-visual-regression": "^5.0.4",
     "sass": "^1.77.8",
     "typescript": "^5"
   }
