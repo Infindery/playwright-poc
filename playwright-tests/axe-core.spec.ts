@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { test } from '@playwright/test';
 import AxePuppeteer from '@axe-core/playwright';
 import { writeFileSync } from 'fs';
