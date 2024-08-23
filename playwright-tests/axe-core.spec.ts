@@ -9,5 +9,5 @@ test('ContrastTest', async ({ page }) => {
 
   const contrastViolations = results.violations.filter((violation) => violation.id === 'color-contrast');
 
-  writeFileSync('playwright-tests-results/playwright-contrast-test.json', JSON.stringify(contrastViolations, null, 2));
+  writeFileSync('playwright-tests-results/axe-core/playwright-contrast-test.json', JSON.stringify(contrastViolations, null, 2));
 });
