@@ -24,23 +24,20 @@ test.describe('AccessibilityTests', () => {
     await expect(page.getByTestId('hero-abbr').nth(0)).toHaveAttribute('title', 'World Wildlife Fund');
     await page.getByTitle('Программа по Восстановлению Популяций');
     await expect(page.getByText('МПОЖ')).toHaveAttribute('title', 'Международная Программа Обмена Животных');
-
-    await page.getByTestId('hero-abbr').nth(0).hover();
-    await page.waitForTimeout(5000);
   });
 
   test('LabelTests', async ({ page }) => {
     await page.getByTestId('form-label-name').isVisible();
     await page.getByTestId('form-label-name').click();
     await expect(page.getByTestId('form-input-name')).toBeFocused();
-    await page.screenshot({ path: 'screenshots/playwright/labels-page-screenshot.png' });
+    await page.screenshot({ path: 'playwright-tests-results/initial-tests/labels-page-screenshot.png' });
   });
 
   test('PlaceholderTests', async ({ page }) => {
     await page.getByPlaceholder('Имя');
     await page.getByPlaceholder('Количество билетов').fill('10');
-    await page.getByPlaceholder('Количество билетов').screenshot({ path: 'screenshots/playwright/element-screenshot.png' });
-    await page.screenshot({ path: 'screenshots/playwright/placeholders-page-screenshot.png' });
+    await page.getByPlaceholder('Количество билетов').screenshot({ path: 'playwright-tests-results/initial-tests/element-screenshot.png' });
+    await page.screenshot({ path: 'playwright-tests-results/initial-tests/placeholders-page-screenshot.png' });
   });
 
   test('AriaAttrsTests', async ({ page }) => {
