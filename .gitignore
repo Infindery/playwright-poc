@@ -34,7 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-/test-results/
+/cypress-tests-results/
 /playwright-report/
 /playwright-tests-results/
 /blob-report/
