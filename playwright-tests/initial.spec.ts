@@ -1,5 +1,3 @@
-/* eslint-disable no-await-in-loop */
-/* eslint-disable @typescript-eslint/no-unused-expressions */
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
@@ -10,7 +8,7 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
-test.describe('AvailabilityTests', () => {
+test.describe('AccessibilityTests', () => {
   test('AltTests', async ({ page }) => {
     await expect(page.getByTestId('header-logo')).toHaveAttribute('alt', 'Логотип московского зоопарка');
     await expect(page.getByTestId('hero-image')).toHaveAttribute('alt', 'Изображение панды');
