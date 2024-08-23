@@ -54,7 +54,7 @@ export function Header() {
       <Link
         type="button"
         className="header__btn"
-        href="#form"
+        href="#"
         data-pw="header-button"
       >
         Купить билеты
